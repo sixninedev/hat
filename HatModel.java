@@ -46,6 +46,7 @@ public class HatModel   extends ModelBiped
     }
     copyModelAngles(source, model);
     GlStateManager.pushMatrix();
+    Minecraft.getMinecraft().getTextureManager().bindTexture(new ResourceLocation("clientname/hat1.png"));
     model.render(scale);
     GlStateManager.popMatrix();
 
